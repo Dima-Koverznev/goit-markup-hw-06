@@ -834,6 +834,14 @@ transition: transform var(--tra);
   transition: border-color var(--tra);
 }
 
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
 .form-field {
   position: relative;
   margin-bottom: 10px;
