@@ -244,6 +244,7 @@ position: relative;
 
 .button.btn-primary {
   height: 50px;
+  width: 200px;
   /* padding: 10px 32px;
   border-radius: 4px;*/
 
@@ -882,9 +883,9 @@ transition: transform var(--tra);
 
 .checkbox-label {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 13px;
 
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -904,8 +905,24 @@ transition: transform var(--tra);
   transition: background-color var(--tra), border var(--tra), box-shadow var(--tra), fill var(--tra), border-color var(--tra);
 }
 
+
+.form-checkbox:checked + .checkbox-label span {
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: none;
+  fill: var(--primary-white-color);
+}
+
 .form-checkbox:focus + .checkbox-label span {
   border-color: var(--accent-color);
+}
+
+.checkbox-label a {
+  display: block;
+  margin-left: 7px;
+  text-decoration: underline;
+
+  color: var(--accent-color);
 }
 
 .checkbox-link {
